@@ -1,0 +1,70 @@
+html, body {
+  margin: unset;
+  padding: unset;
+  height: 100vh;
+  font-family: system-ui;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+document.full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  animation: 1.5s linear faded;
+}
+
+div.full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  font-family: Tahoma;
+  margin: unset;
+  color: #da3633;
+}
+
+.info {
+  color: grey;
+  font-size: 12px;
+}
+
+@keyframes faded {from{opacity: 0}to{opacity: 1}}
+
+@media (max-width: 560px) {
+  document.full{
+    padding: 0px 16px;
+  }
+}
+
+#onscript {
+  display: none;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MAIN */
+#onscript {
+  background: url(media/moon-back.jpg) no-repeat center/cover;
+  height: 100%;
+}
