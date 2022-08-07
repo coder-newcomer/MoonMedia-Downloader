@@ -23,3 +23,6 @@ MoonMedia Downloader is a free online media conversion web tool that allows you 
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
+    
+# Notes
+This project is currently still in development and **NOT FINISHED YET!** Don't use this for now.
