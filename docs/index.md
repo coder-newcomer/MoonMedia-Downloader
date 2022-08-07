@@ -1,4 +1,4 @@
-## MediaHub Download
+## MoonMedia Downloader
 
 You can use the [editor on GitHub](https://github.com/coder-newcomer/FakeVid/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
