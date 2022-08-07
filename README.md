@@ -1,3 +1,4 @@
+<img src="https://coder-newcomer.github.io/MoonMedia-Downloader/web/media/moon-icon.png" height="128"><br>
 # MoonMedia Downloader
 MoonMedia Downloader is a free online media conversion web tool that allows you to convert any video link or file to various formats without the need to install any software on your computer. Using Convert2MP3 Widget API.
 
@@ -26,3 +27,7 @@ MoonMedia Downloader is a free online media conversion web tool that allows you 
     
 # Notes
 This project is currently still in development and **NOT FINISHED YET!** Don't use this for now.
+
+# Credits
+Moon-icon from [Vecteezy](http://www.vecteezy.com/free-png/moon)<br>
+Night illustration vector created by [upklyak](http://www.freepik.com/author/upklyak)
