@@ -1,5 +1,5 @@
 # MediaHub Download
-An improved web GUI interfaces for downloading common media using CONVERT2MP3 Widget API
+MoonMedia Downloader is a free online media conversion web tool that allows you to convert any video link or file to various formats without the need to install any software on your computer. Using Convert2MP3 Widget API.
 
 # License
     MIT License
