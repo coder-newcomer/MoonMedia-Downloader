@@ -1,2 +1,2 @@
 doc = document.getElementById('onscript');
-doc.style.display = 'block'
+doc.style.display = 'flex'

@@ -25,17 +25,13 @@ div.full {
   text-align: center;
 }
 
-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 .main {
   font-family: Tahoma;
   margin: unset;
   color: #da3633;
 }
+
+.reason {color: black;}
 
 .info {
   color: grey;
