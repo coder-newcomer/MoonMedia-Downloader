@@ -2,7 +2,7 @@ html, body {
   margin: unset;
   padding: unset;
   height: 100vh;
-  font-family: system-ui;
+  font-family: Nexa Regular;
 }
 
 * {
@@ -25,16 +25,17 @@ div.full {
   text-align: center;
 }
 
-.main {
+.info {
   font-family: Tahoma;
   margin: unset;
   color: #da3633;
 }
 
-.reason {color: black;}
+.reason {color: black;font-family: system-ui;}
 
-.info {
+.advice {
   color: grey;
+  font-family: system-ui;
   font-size: 12px;
 }
 

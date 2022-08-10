@@ -1,7 +1,8 @@
 /* https://www.youtube.com/watch?v=2reEERHqHgs */
 html {
-  --color: #fbbc3e;
-  --background: rgb(0 0 0 / 50%);
+  --color: #ffe561;
+  --background:
+  rgb(0 0 0 / 50%);
   --size: 16px;
   color: white;
 }
@@ -19,6 +20,7 @@ html {
 #invalid {
   color: red;
   text-align: center;
+  font-size: 12px;
 }
 
 #onscript {
@@ -54,10 +56,22 @@ content {
 
 .logo {
   margin: 0 var(--size);
+  border: 2px solid white;
   border-radius: 100%;
   background: url(media/moon-icon.png) no-repeat center/contain;
   height: calc(var(--size) * 4);
   width: calc(var(--size) * 4);
+  animation: 4s ease-in-out infinite logo;
+}
+
+@keyframes logo {
+  0% {
+    transform: translateY(5%);
+  } 50% {
+    transform: translateY(-5%);
+  } 100% {
+    transform: translateY(5%);
+  }
 }
 
 div.url {
@@ -68,24 +82,35 @@ div.url {
 #url::placeholder {color: rgb(255 255 255 / 64%);}
 
 #url {
+  color: white;
   caret-color: var(--color);
   background: var(--background);
   border: 2px solid var(--color);
-  border-radius: 32px;
+  border-inline: none;
   outline: none;
   padding: 8px;
-  font-size: var(--size);
+  font-family: Nexa Regular;
+  font-size: calc(var(--size) - 2px);
   text-align: center;
   width: 100%;
 }
 
+#empty, #enter {
+  width: 32px;
+  background: var(--background);
+  border: 2px solid var(--color);
+}
+
+#empty{display: flex;border-radius: 0px 32px 32px 0px;border-left: none;align-items: center;}
+#enter {border-radius: 32px 0px 0px 32px;border-right: none;}
+#btn-right {cursor: pointer;}
 /* Window */
 window {
   border: 2px solid var(--color);
   border-top: none;
   border-radius: 0 0 var(--size) var(--size);
   background: var(--background);
-  height: 100px;
+  height: 256px;
   width: 100%;
 } 
 
@@ -96,19 +121,55 @@ tab {
   border-bottom: none;
   border-radius: var(--size) var(--size) 0 0;
   padding: calc(var(--size) / 2) var(--size);
-  justify-content: flex-start;
   width: 100%;
+  flex-direction: column;
 }
 
-.tab {
+tab-label {
   display: flex;
   align-items: center;
   padding: 4px;
   font-size: 12px;
+  cursor: pointer;
 }
 
-.tab-icon {
+.tab-icon, .tab-ic {
+  fill: white;
   margin-right: 4px;
+  height: 16px;
+} .tab-ic {fill: none;}
+
+tab-group, tab-slider {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+tab-slider {
+  overflow: hidden;
+  color: transparent;
+  height: 2px;
+}
+
+tab-label.hov {
+  
+}
+
+slider {
+  display: none;
+  position: relative;
+  left: 12px;
+  height: 100%;
+  width: 2em;
+  background: var(--color);
+}
+
+/*hover*/
+
+
+@font-face {
+  font-family: Keep Calm; src: url("font/KeepCalm-Medium.ttf");
+  font-family: Nexa Regular; src: url("font/Nexa Regular.otf");
 }
 
 @media (min-width: 432px) {
