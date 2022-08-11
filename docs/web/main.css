@@ -4,7 +4,12 @@ html {
   --background:
   rgb(0 0 0 / 50%);
   --size: 16px;
+  --hover:
+  rgb(255 255 255 / 15%);
+  --bezier:
+  cubic-bezier(0, 0, 0, 1);
   color: white;
+  /**/
 }
 
 /* Initial*/
@@ -50,13 +55,17 @@ content {
 
 .brand-text {
   margin: unset;
-  font: calc(var(--size) + 10px) Keep Calm;
+  font: calc(var(--size) + 10px) Keep Calm Medium;
   text-align: center;
 }
 
 .logo {
   margin: 0 var(--size);
+<<<<<<< HEAD
+  outline: 2px solid white;
+=======
   border: 2px solid white;
+>>>>>>> aa1e7aefeca75070b6b4859604f59f1725584210
   border-radius: 100%;
   background: url(media/moon-icon.png) no-repeat center/contain;
   height: calc(var(--size) * 4);
@@ -106,6 +115,7 @@ div.url {
 #btn-right {cursor: pointer;}
 /* Window */
 window {
+  overflow: hidden;
   border: 2px solid var(--color);
   border-top: none;
   border-radius: 0 0 var(--size) var(--size);
@@ -125,6 +135,12 @@ tab {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
+/*hover & active*/
+
+@font-face {
+  font-family: Keep Calm Medium; src: url("font/KeepCalm-Medium.ttf");
+=======
 tab-label {
   display: flex;
   align-items: center;
@@ -172,6 +188,7 @@ slider {
 }
 
 @font-face {
+>>>>>>> aa1e7aefeca75070b6b4859604f59f1725584210
   font-family: Nexa Regular; src: url("font/Nexa Regular.otf");
 }
 
