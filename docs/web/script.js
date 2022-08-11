@@ -55,4 +55,3 @@ function tabind(element) { //Visual bug is probably exist
 
 /* click effect */
 var slider = document.querySelector('slider');
-main.on
