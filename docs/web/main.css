@@ -1,13 +1,9 @@
 /* https://www.youtube.com/watch?v=2reEERHqHgs */
 html {
   --color: #ffe561;
-  --background:
-  rgb(0 0 0 / 50%);
+  --background: rgb(0 0 0 / 50%);
   --size: 16px;
-  --hover:
-  rgb(255 255 255 / 15%);
-  --bezier:
-  cubic-bezier(0, 0, 0, 1);
+  --bezier: cubic-bezier(0, 0, 0, 1);
   color: white;
   /**/
 }
@@ -23,6 +19,7 @@ html {
 }
 
 #invalid {
+  display: none;
   color: red;
   text-align: center;
   font-size: 12px;
@@ -79,6 +76,7 @@ content {
   }
 }
 
+/* Media URL */
 div.url {
   margin-top: calc(var(--size) * 1.5);
   width: 100%;
@@ -109,8 +107,10 @@ div.url {
 #empty{display: flex;border-radius: 0px 32px 32px 0px;border-left: none;align-items: center;}
 #enter {border-radius: 32px 0px 0px 32px;border-right: none;}
 #btn-right {cursor: pointer;}
+
 /* Window */
 window {
+  /* display: none; */
   overflow: hidden;
   border: 2px solid var(--color);
   border-top: none;
@@ -121,25 +121,48 @@ window {
 } 
 
 tab {
-  display: flex;
+  /* display: none; */
   background: var(--background);
   border: 2px solid var(--color);
   border-bottom: none;
   border-radius: var(--size) var(--size) 0 0;
-  padding: calc(var(--size) / 2) var(--size);
+  padding: 0 var(--size);
+  padding-top: 2px;
+  margin-top: 16px;
   width: 100%;
   flex-direction: column;
 }
 
-/*hover & active*/
+tab-group {
+  display: flex;
+  align-items: center;
+}
 
-@font-face {
-  font-family: Keep Calm Medium; src: url("font/KeepCalm-Medium.ttf");
+.tab-name {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 8px;
+  width: fit-content;
+  transition: 0.25s var(--bezier);
 }
-  
-@font-face {
-  font-family: Nexa Regular; src: url("font/Nexa Regular.otf");
+
+.tab-label {
+  margin-left: 4px;
+  font-size: 86%;
 }
+
+/* Invisible */
+invisible {display: flex;}
+slider {display: none;position: absolute;height: 2px;transition: 0.25s var(--bezier);background: var(--color);}
+slider-hover {background: rgb(255 255 255 / 50%);height: 2px;transition: 0.25s var(--bezier);transform: scaleX(0);}
+
+/*hover & active*/
+.tab-name:hover {background: rgb(255 255 255 / 25%);}
+.tab-name:active {background: rgb(0 0 0 / 50%);}
+
+@font-face {font-family: Keep Calm Medium;src: url("font/KeepCalm-Medium.ttf");}
+@font-face {font-family: Nexa Regular;src: url("font/Nexa Regular.otf");}
 
 @media (min-width: 432px) {
   
