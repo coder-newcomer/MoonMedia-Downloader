@@ -8,7 +8,6 @@
     <link rel="preload" href="media/moon-icon.png" as="image">
     <link rel="preload" href="font/KeepCalm-Medium.ttf" as="font">
     <link rel="preload" href="font/Nexa Regular.otf" as="font">
-    <link rel="stylesheet" href="pre.css">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="media/moon-icon.png">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8">
@@ -84,6 +83,56 @@
       </document>
       <!--noscript should use direct styler than emnbedded-->
     </noscript>
+    <style>
+html, body {
+  margin: unset;
+  padding: unset;
+  height: 100vh;
+  font-family: Nexa Regular;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+document.full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  animation: 1.5s linear faded;
+}
+
+div.full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info {
+  font-family: Tahoma;
+  margin: unset;
+  color: #da3633;
+}
+
+.reason {color: black;font-family: system-ui;}
+
+.advice {
+  color: grey;
+  font-family: system-ui;
+  font-size: 12px;
+}
+
+@keyframes faded {from{opacity: 0}to{opacity: 1}}
+
+@media (max-width: 560px) {
+  document.full{
+    padding: 0px 16px;
+  }
+}
+    </style>
     <script id="noscript">
       document.querySelector('title').textContent =' MoonMedia Downloader - Looks! Its floating!';
       document.querySelector('noscript').remove();
